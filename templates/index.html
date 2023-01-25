@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>{{title}} - Book_Store_Orders</title>
+        
+    </head>
+    <body>
+        <h1>My Orders!</h1>
+        {% for order in orders %}
+        <div>
+            <p>
+                <a href="order/{{order.id - 1}}"> {{ order.customer_name }}, <b> {{ order.order_date }} </b>, {{ order.quantity }}: {{order.title}} </a>
+            </p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
