@@ -1,0 +1,28 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid dodgerblue;
+}
+
+head {
+  background-color: dodgerblue;
+  margin: 0;
+
+}
+
+body > h1 {
+  text-decoration: underline;
+  text-align: center;
+  background-color: dodgerblue;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+body > div {
+  background-color: bisque;
+}
+body > div > p:hover {
+background-color: dodgerblue;
+color: white;
+}
